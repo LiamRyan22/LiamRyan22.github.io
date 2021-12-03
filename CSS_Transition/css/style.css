@@ -1,3 +1,9 @@
+body{ 
+    background-color:grey;
+}
+h1{text-align:center; color:yellow}
+
+h2{text-align:center; color:yellow}
 
 .box {
     width: 200px; 
