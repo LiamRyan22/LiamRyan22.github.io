@@ -5,10 +5,46 @@ h1{text-align:center; color:yellow}
 
 h2{text-align:center; color:yellow}
 
-.box {
+.box1 {
     width: 200px; 
     height: 200px;
-    background-color: lightsalmon;
+    background-color: purple;
+    margin: 50px auto; 
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.box2 {
+    width: 200px; 
+    height: 200px;
+    background-color: blue;
+    margin: 100px auto; 
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.box3 {
+    width: 200px; 
+    height: 200px;
+    background-color: yellow;
+    margin: 150px auto; 
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.box4 {
+    width: 200px; 
+    height: 200px;
+    background-color: red;
     margin: 200px auto; 
     animation-name: square-to-circle;
     animation-duration: 2s;
@@ -16,7 +52,6 @@ h2{text-align:center; color:yellow}
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-    
 }
 @keyframes square-to-circle {
   0% {

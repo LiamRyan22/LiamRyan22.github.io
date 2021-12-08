@@ -1,0 +1,17 @@
+.navi{
+    background-color: yellowgreen;
+    margin:0px;
+}
+.navitem{
+    display: inline;
+    padding: 220px;
+}
+.center{
+    background-color: gray;
+}
+.middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
