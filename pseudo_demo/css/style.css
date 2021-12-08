@@ -1,0 +1,68 @@
+body{
+    background: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+}
+
+pre code{
+    background: #eee;
+    border: 1px solid #999;
+    display:block;
+    padding: 20px;
+
+}
+
+a{
+    color: red;
+}
+
+a:link{
+    color:red
+}
+
+a:visited{
+    color::grammar-error
+
+    a.hover
+}
+a:hover{
+    color:hotpink
+}
+a:active{
+    color: indigo;
+}
+a.special{
+    color: orange;
+}
+
+#hover-div{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+#hover-div:hover{
+    background: black;
+}
+
+#hover-div p:first-child{
+    color:rosybrown;
+}
+
+#hover-div p:last-child{
+    font-weight: bold;
+}
