@@ -17,6 +17,6 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "EXPIRED";
+    document.getElementById("clock").innerHTML = "CHRISTMAS";
   }
 }, 1000);
