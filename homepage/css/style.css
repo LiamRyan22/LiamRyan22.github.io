@@ -1,0 +1,118 @@
+.header{
+    background-color: rgb(58, 47, 34);
+    text-align: center;
+    padding: 20px;
+}
+.center{
+    background-color: rgb(54, 54, 54);
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 5%;
+}
+.centered {
+    float: none;
+    position: relative;
+    margin-top: 2vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58vw;
+    background-color:darkgoldenrod;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgoldenrod;
+
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0.7vw 0.8vw;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.nav li a:hover {
+    background-color: darkgray;
+}
+
+p{
+    color: darkgray;
+    text-align:center;
+    font-size: 1.2vw;
+}
+
+h2{
+    color:darkgoldenrod;
+    text-align:center;
+    font-size: 3vw;
+}
+.right1{
+    grid-column: 2;
+    grid-row: 1;
+}
+.left1{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 10vw;
+    text-align:center;
+}
+.left2{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 3vw;
+}
+.right2{
+    margin-top: -1vw;
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 10vw;
+    text-align:center;
+}
+.left3{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 12vw;
+    margin-top: -10vw;
+}
+.right3{
+    margin-top: -6vw;
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 3vw;
+    margin-bottom: 15vw
+}
+.left4{
+    grid-column: 1;
+    grid-row: 4;
+    margin-top:-10vw;
+    margin-left: 3vw;
+}
+.right4{
+    margin-top: -15vw;
+    grid-column: 2;
+    grid-row: 4;
+    margin-right: 10vw;
+    margin-bottom: 15vw;
+    text-align:center;
+}
+.bottom{
+    margin-top:-2.5vw;
+    background-color: rgb(54, 54, 54);
+    text-align:center;
+    padding-bottom: 2vw;
+}
+.footer{
+    margin-top:-2.5vw;
+    background-color: red;
+    color:darkgoldenrod;
+}
