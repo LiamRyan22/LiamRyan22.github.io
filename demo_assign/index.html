@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo | LR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Centering in CSS!</h1>
+        </div>
+        <h2>For this demo, simply pick two methods of centering out of each section, create html elements fitting for the chosen methods, and attempt to use them to center your elements.</h2>
+        <div class="horizontal">
+            <h2>Horizontal Centering</h2>
+            <ul>
+                <li>Are the elements in line? If so:</li>
+                <img src="images/inline.JPG" style="height: 60px">
+                <li>Is it a block-level element? If so: </li>
+                <img src="images/block.JPG" style="height: 60px">
+                <li>Is there more than one block-level element next to each other? If so, there are multiple methods we can use but the easiest is a flex box:</li>
+                <img src="images/flexbox.JPG" style="height: 60px">
+                <li>Do you have multiple block-level elements on top of each other? If so, the previous auto margin technique (technique 2) works.</li>
+                <img src="images/block.JPG" style="height: 60px">
+            </ul>
+        </div>
+        <div class="vertical">
+            <h2>Vertical Centering</h2>
+            <ul>
+                <li>Are the elements inline?</li>
+                <ul>
+                    <li>Is it a single line? If so, padding works in most cases, but also you can set the line-height equivalent to the height as shown below:</li>
+                    <img src="images/lineheight.JPG" style="height: 80px">
+                    <li>Is it multiple lines? If so, there are many options. We can use padding to center it, if that doesn't work our first option is to use vertical align.</li>
+                    <img src="images/vertalign.JPG" style="height: 60px">
+                    <p>Our next option would be to use another flexbox</p>
+                    <img src="images/flexvert.JPG" style="height: 80px">
+                    <p>Our last option would be to use a ghost element, essentially we would create an extra element and align the text with that.</p>
+                    <img src="images/ghost.JPG" style="height: 200px">
+                </ul>
+                <li>Is it a block-level element?</li>
+                <ul>
+                    <li>If you know the height of the element:</li>
+                    <img src="images/height.JPG" style="height:150px">
+                    <li>If you do not know the height:</li>
+                    <img src="images/noheight.JPG" style="height:150px">
+                    <li>Yet again, if nothing else works we can use flexbox:</li>
+                    <img src="images/flexvert.JPG" style="height:80px">
+                </ul>
+            </ul>
+        </div>
+        <div class="both">
+            <h2>Horizontal and Vertical Centering</h2>
+            <ul>
+                <li>If you know the width and height of the element:</li>
+                <img src="images/widthheight.JPG" style="height:150px">
+                <li>If you do not know the width and height of the element:</li>
+                <img src="images/nowidthheight.JPG" style="height:150px">
+                <li>Flexbox as always:</li>
+                <img src="images/flex.JPG" style="height:80px">
+                <li>Last option is grid, after setting up a grid in the container:</li>
+                <img src="images/grid.JPG" style="height:60px">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

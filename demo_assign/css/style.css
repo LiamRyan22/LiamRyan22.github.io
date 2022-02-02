@@ -1,0 +1,21 @@
+.header{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    background-color: wheat;
+}
+
+
+.center{
+    margin:auto;
+}
+
+.both{
+    background-color: wheat;
+}
+
+.vertical{
+    background-color: lightyellow;
+}
