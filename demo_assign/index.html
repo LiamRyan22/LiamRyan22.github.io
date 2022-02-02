@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,28 @@
     <title>Demo | LR</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Centering in CSS!</h1>
         </div>
-        <h2>For this demo, simply pick two methods of centering out of each section, create html elements fitting for the chosen methods, and attempt to use them to center your elements.</h2>
+        <h2>For this demo, simply pick two methods of centering out of each section, create html elements fitting for
+            the chosen methods, and attempt to use them to center your elements.</h2>
         <div class="horizontal">
             <h2>Horizontal Centering</h2>
             <ul>
                 <li>Are the elements in line? If so:</li>
                 <img src="images/inline.JPG" style="height: 60px">
+                <p style="text-align:center;">This text is centerd using the previously stated method!</p>
                 <li>Is it a block-level element? If so: </li>
                 <img src="images/block.JPG" style="height: 60px">
-                <li>Is there more than one block-level element next to each other? If so, there are multiple methods we can use but the easiest is a flex box:</li>
+                <li>Is there more than one block-level element next to each other? If so, there are multiple methods we
+                    can use but the easiest is a flex box:</li>
                 <img src="images/flexbox.JPG" style="height: 60px">
-                <li>Do you have multiple block-level elements on top of each other? If so, the previous auto margin technique (technique 2) works.</li>
+                <p class="flex">This text is centerd using the previously stated method!</p>
+                <li>Do you have multiple block-level elements on top of each other? If so, the previous auto margin
+                    technique (technique 2) works.</li>
                 <img src="images/block.JPG" style="height: 60px">
             </ul>
         </div>
@@ -31,13 +38,22 @@
             <ul>
                 <li>Are the elements inline?</li>
                 <ul>
-                    <li>Is it a single line? If so, padding works in most cases, but also you can set the line-height equivalent to the height as shown below:</li>
+                    <li>Is it a single line? If so, padding works in most cases, but also you can set the line-height
+                        equivalent to the height as shown below:</li>
                     <img src="images/lineheight.JPG" style="height: 80px">
-                    <li>Is it multiple lines? If so, there are many options. We can use padding to center it, if that doesn't work our first option is to use vertical align.</li>
+                    <div class="lines">
+                    <a href="#0">This text was</a>
+                    <a href="#0">centered</a>
+                    <a href="#0">with the</a>
+                    <a href="#0">previous method.</a>
+                    </div>
+                    <li>Is it multiple lines? If so, there are many options. We can use padding to center it, if that
+                        doesn't work our first option is to use vertical align.</li>
                     <img src="images/vertalign.JPG" style="height: 60px">
                     <p>Our next option would be to use another flexbox</p>
                     <img src="images/flexvert.JPG" style="height: 80px">
-                    <p>Our last option would be to use a ghost element, essentially we would create an extra element and align the text with that.</p>
+                    <p>Our last option would be to use a ghost element, essentially we would create an extra element and
+                        align the text with that.</p>
                     <img src="images/ghost.JPG" style="height: 200px">
                 </ul>
                 <li>Is it a block-level element?</li>
@@ -66,4 +82,5 @@
         </div>
     </div>
 </body>
+
 </html>
