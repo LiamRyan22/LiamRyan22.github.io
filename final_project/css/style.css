@@ -8,6 +8,8 @@
 .header{
     background-color: antiquewhite;
     padding: 20px;
+    position: sticky;
+    top: 0px;
 }
 .nav {
     list-style-type: none;
@@ -15,7 +17,8 @@
     padding: 0;
     overflow: hidden;
     background-color: antiquewhite;
-
+    position: sticky;
+    top: 0;
 }
 .nav li {
     float: left;
