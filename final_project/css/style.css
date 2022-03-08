@@ -1,3 +1,6 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .container{
     background-color: lightgray;
     display: grid;
@@ -30,7 +33,7 @@
     text-decoration: none;
     font-size: 60px;
 }
-.links{
+.nav .links{
     float:right;
 }
 .links a {
@@ -42,10 +45,10 @@
     text-decoration: none;
     font-size: 1.3vw;
 }
-.port li a:hover {
+.port a:hover {
     background-color: darkgray;
 }
-.links li a:hover {
+.links a:hover {
     background-color: darkgray;
 }
 .left1{
@@ -54,13 +57,16 @@
     padding-left: 20px;
     grid-row: 1;
     grid-column: 1;
+    position:relative;
 }
+
 .right1{
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
     grid-row: 1;
     grid-column: 2;
+    position:relative;
 }
 .left2{
     margin-top: -20px;
@@ -68,6 +74,7 @@
     padding-right: 20px;
     grid-row: 2;
     grid-column: 1;
+    position:relative;
 }
 .right2{
     margin-top: -20px;
@@ -75,14 +82,95 @@
     padding-left: 20px;
     grid-row: 2;
     grid-column: 2;
+    position:relative;
 }
-.quote{
+.left3{
     grid-row: 3;
+    grid-column: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.left4{
+    grid-row: 4;
+    grid-column: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.left5{
+    grid-row: 5;
+    grid-column: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.left6{
+    grid-row: 6;
+    grid-column: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.right3{
+    grid-row: 3;
+    grid-column: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.right4{
+    grid-row: 4;
+    grid-column: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.right5{
+    grid-row: 5;
+    grid-column: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.right6{
+    grid-row: 6;
+    grid-column: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+/* Code ADAPTED from https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+.left1 div, .left2 div, .left3 div, .left4 div, .left5 div, .left6 div, .right1 div, .right2 div, .right3 div, .right4 div, .right5 div, .right6 div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: tan;
+    margin-bottom: 1.8%;
+    
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }  
+   .left1:hover div, .left2:hover div, .left3:hover div, .left4:hover div, .left5:hover div, .left6:hover div, .right1:hover div, .right2:hover div, .right3:hover div, .right4:hover div, .right5:hover div, .right6:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+   }
+
+   
+.quote{
+    grid-row: 7;
     grid-column: 1 /span 2;
     height: 15vw;
     padding-left: 5%;
     font-size: 28px;
-    margin-top: -3vw;
+    margin-top: -10%;
+    margin-bottom: 75%;
 }
 
 .title-center{
@@ -109,13 +197,13 @@
     grid-row: 4;
     grid-column: 1;
     text-align:center;
-    margin-bottom: 30%;
+    margin-bottom: 34%;
 }
 .about-right2{
     grid-row: 4;
     grid-column: 2;
     text-align:center;
-    margin-bottom: 30%;
+    margin-bottom: 34%;
 }
 .services-center{
     grid-row: 1;
@@ -184,7 +272,7 @@
     text-align: center;
     background: antiquewhite;
     padding: 0.5vw;
-    height: 50%;
+    height: 85%;
     width: 90%;
     margin-left: 5%;
 }
@@ -202,14 +290,14 @@
     text-align: center;
     background: antiquewhite;
     padding: 0.5vw;
-    height: 62%;
+    height: 85%;
     width: 90%;
 }
 .case-box4 {
     text-align: center;
     background: antiquewhite;
     padding: 0.5vw;
-    height: 55%;
+    height: 85%;
     width: 90%;
     margin-bottom: 30%;
 }
@@ -256,6 +344,9 @@
     margin-bottom: 30%;
     margin-top: 5%;
     margin-left: -10%;
+}
+.headshot img{
+    width:40%;
 }
 /* From W3 */
 .socials {
@@ -317,7 +408,6 @@
     width: 100%;
     background-color: darkslategray;
     line-height: 1.3;
-    font-family: Menlo, monospace;
     padding-bottom: 5%;
     padding-top: 5%;
   }
@@ -343,19 +433,44 @@
 #myBtn:hover{
     box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
-  
+@media(max-width: 1510px){
+    .socials {
+        padding: 10%;
+        font-size: 300%;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      }
+}
+@media(max-width:1150px){
+    .socials {
+        padding: 10%;
+        font-size: 200%;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      }
+    .quote{
+        margin-bottom: 90%;
+    }
+}
 @media(max-width:1000px){
-    .port{
+    .nav li{
+        float:none;
+    }
+    .nav .port{
         display: flex;
         justify-content: center;
     }
-    .links{
+    .nav .links{
         float:none;
         display: flex;
         flex-direction: column;
         text-align: center;      
     }
-    .links a{
+    .nav .links a{
         font-size: 2.3vw;
     }
     html{
@@ -374,7 +489,7 @@
         margin-bottom: 0%;
         margin-top: 20%;
         margin-left: 0%;
-        margin-bottom: 100%;
+        margin-bottom: 70%;
     }
     .contact-midleft{
         grid-row: 4;
@@ -414,7 +529,7 @@
         text-align: center;
         background: antiquewhite;
         padding: 0.5vw;
-        height: 65%;
+        height: 100%;
         width: 90%;
         margin-left: 5%;
     }
@@ -440,16 +555,70 @@
         text-align: center;
         background: antiquewhite;
         padding: 0.5vw;
-        height: 83%;
+        height: 100%;
         width: 90%;
     }
     .casefoot{
         margin-top: 30%;
     }
 }
+@media(max-width: 760px){
+    /* Code ADAPTED from https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+    .left1 div, .left2 div, .left3 div, .left4 div, .left5 div, .left6 div, .right1 div, .right2 div, .right3 div, .right4 div, .right5 div, .right6 div{   
+        font-size: 10px;
+       }  
+}
 @media(max-width:650px){
     .casefoot{
         margin-top: 60%;
+    }
+    .quote{
+        margin-bottom: 110%;
+    }
+    .left1{
+        margin-left: -5%;
+    }
+    
+    .right1{
+        margin-left: -6%;
+    }
+    .left2{
+        margin-left: -5%;
+    }
+    .right2{
+        margin-left: -6%;
+    }
+    .left3{
+        margin-left: -5%;
+    }
+    .left4{
+        margin-left: -5%;
+    }
+    .left5{
+        margin-left: -5%;
+    }
+    .left6{
+        margin-left: -5%;
+    }
+    .right3{
+        margin-left: -6%;
+    }
+    .right4{
+        margin-left: -6%;
+    }
+    .right5{
+        margin-left: -6%;
+    }
+    .right6{
+        margin-left: -6%;
+    }
+    /* Code ADAPTED from https://makitweb.com/html-how-to-show-text-above-image-on-hover/ */
+    .left1 div, .left2 div, .left3 div, .left4 div, .left5 div, .left6 div, .right1 div, .right2 div, .right3 div, .right4 div, .right5 div, .right6 div{   
+        font-size: 6px;
+        right:-10px;
+       }  
+    .left1:hover div, .left2:hover div, .left3:hover div, .left4:hover div, .left5:hover div, .left6:hover div, .right1:hover div, .right2:hover div, .right3:hover div, .right4:hover div, .right5:hover div, .right6:hover div{
+        width: 100px;
     }
 }
 @media(max-width:475px){
@@ -457,14 +626,69 @@
         margin-top: 70%;
     }
     .contact-right{
-        margin-bottom: 200%;
+        margin-bottom: 130%;
     }
     .services-right h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     .services-left h2{
-        font-size: 20px;
+        font-size: 15px;
     }
+    .aboutfoot{
+        margin-top: 40%;
+    }
+    .headshot img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: -23%;
+    }
+    .quote{
+        margin-bottom: 140%;
+    }
+    .quote{
+        font-size: 22px;
+    }
+}
+@media(max-width: 425px){
+    .left1{
+        margin-left: -11%;
+    }
+    
+    .right1{
+        margin-left: -8.5%;
+    }
+    .left2{
+        margin-left: -11%;
+    }
+    .right2{
+        margin-left: -8.5%;
+    }
+    .left3{
+        margin-left: -11%;
+    }
+    .left4{
+        margin-left: -11%;
+    }
+    .left5{
+        margin-left: -11%;
+    }
+    .left6{
+        margin-left: -11%;
+    }
+    .right3{
+        margin-left: -8.5%;
+    }
+    .right4{
+        margin-left: -8.5%;
+    }
+    .right5{
+        margin-left: -8.5%;
+    }
+    .right6{
+        margin-left: -8.5%;
+    }
+
 }
 @media(max-width: 343px){
     .services-right h2{
@@ -472,5 +696,94 @@
     }
     .services-left h2{
         font-size: 25px;
+    }
+    
+    .case-box2 h2{
+        font-size: 110%;
+    }
+    
+    .casefoot{
+        margin-top: 100%;
+    }
+    .aboutfoot{
+        margin-top: 60%;
+    }
+    .port a{
+        font-size: 250%;
+    }
+    .left1{
+        margin-left: -18%;
+    }
+    
+    .right1{
+        margin-left: -13%;
+    }
+    .left2{
+        margin-left: -18%;
+    }
+    .right2{
+        margin-left: -13%;
+    }
+    .left3{
+        margin-left: -18%;
+    }
+    .left4{
+        margin-left: -18%;
+    }
+    .left5{
+        margin-left: -18%;
+    }
+    .left6{
+        margin-left: -18%;
+    }
+    .right3{
+        margin-left: -13%;
+    }
+    .right4{
+        margin-left: -13%;
+    }
+    .right5{
+        margin-left: -13%;
+    }
+    .right6{
+        margin-left: -13%;
+    }
+}
+@media (min-width: 2500px){
+    .left1{
+        margin-left: 4%;
+    }
+    .right1{
+        margin-left: 3%;
+    }
+    .left2{
+        margin-left: 4%;
+    }
+    .right2{
+        margin-left: 3%;
+    }
+    .left3{
+        margin-left: 4%;
+    }
+    .left4{
+        margin-left: 4%;
+    }
+    .left5{
+        margin-left: 4%;
+    }
+    .left6{
+        margin-left: 4%;
+    }
+    .right3{
+        margin-left: 3%;
+    }
+    .right4{
+        margin-left: 3%;
+    }
+    .right5{
+        margin-left: 3%;
+    }
+    .right6{
+        margin-left: 3%;
     }
 }
